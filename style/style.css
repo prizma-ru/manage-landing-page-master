@@ -26,9 +26,146 @@
 body{
     font-family: 'Be Vietnam', sans-serif;
     font-size:  16px; 
-    max-width: 1600px; /*максимальный размер 1170пх*/
+    max-width: 1440px; /*максимальный размер 1170пх*/
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
-    color: #242f4f;
+    color:var(--dark-blue);
+}
+/*===============Container==============*/
+.container {
+    width: 100%; /*ширина блока*/
+    max-width: 1140px; /*максимальный размер 1170пх*/
+    margin: 0 auto; /*выровниваем по центру*/
+    padding: 0 20px;
+    
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form{
+    display: block;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    color: var(--dark-grayish-blue);
 }
 
+.header{
+    margin-top: 30px;
+    margin-bottom: 160px;
+}
+/*-------------------------nav__menu--------------------------*/
+.header__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.header__menu li{
+    list-style-type: none;
+    margin-left: 30px;    
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+
+.header__menu li:first-child{
+    margin-left: 0;
+}
+.header__menu li:hover{
+    color: var(--dark-grayish-blue);
+}
+/*-------------------------nav__menu--------------------------*/
+
+/*-------------------------started-btn--------------------------*/
+.started-btn{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 17px 45px;
+    background-color: var(--bright-red);
+    color: var(--very-pale--red);
+    border-radius: 34px;
+    cursor: pointer;
+    outline: none;
+}
+
+.started-btn:hover{
+    opacity: 0.5;
+
+}
+/*-------------------------started-btn--------------------------*/
+
+
+/*-------------------------intro--------------------------*/
+.intro{
+    margin-bottom: 150px;
+}
+.intro__content{
+    padding-right: 50px;
+}
+.intro__title{
+    font-size: 55px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 45px;
+    line-height: 65px;
+}
+.intro__text{
+    margin-bottom: 45px;
+    padding-right: 130px;
+}
+/*-------------------------intro--------------------------*/
+/*-------------------------about--------------------------*/
+.about{
+    margin-bottom: 150px;
+}
+.about__flex{
+    align-items: flex-start;
+}
+.aboute__item{
+    position: relative;
+    margin-bottom: 45px;
+}
+.aboute__item:last-child{
+    margin-bottom: 0px;
+}
+
+.about__title-block{
+   margin-right: 120px; 
+}
+.aboute__items{
+    margin-left: 120px;
+    
+}
+.item-number{
+    position: absolute;
+    font-size: 12px;
+    padding: 10px 20px;
+    /* width: 67px;
+    height: 40px; */
+    border-radius: 20px;
+    background-color: var(--bright-red);
+    color: var(--very-pale--red);
+    text-align: center;
+    top:0;
+    left:-83px
+}
+.about__title{
+    margin-bottom: 45px;
+}
+.item__title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*-------------------------about--------------------------*/
