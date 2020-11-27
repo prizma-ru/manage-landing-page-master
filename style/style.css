@@ -30,6 +30,18 @@ body{
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
     color:var(--dark-blue);
+    position: relative;
+}
+
+
+.body__marker{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--dark-blue);
+    top: 0;
+    left: 0;
+
 }
 /*===============Container==============*/
 .container {
@@ -48,16 +60,17 @@ form{
     display: block;
 }
 h2{
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
+    line-height: 1.13;
 }
 p{
     color: var(--dark-grayish-blue);
 }
 
 .header{
-    margin-top: 30px;
-    margin-bottom: 160px;
+    padding-top: 55px;
+    margin-bottom: 108px;
 }
 /*-------------------------nav__menu--------------------------*/
 .header__menu{
@@ -88,12 +101,12 @@ p{
 
 /*-------------------------started-btn--------------------------*/
 .started-btn{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 17px 45px;
+    padding: 15px 30px;
     background-color: var(--bright-red);
     color: var(--very-pale--red);
-    border-radius: 34px;
+    border-radius: 30px;
     cursor: pointer;
     outline: none;
 }
@@ -106,27 +119,43 @@ p{
 
 
 /*-------------------------intro--------------------------*/
+.off-padding{
+    padding-right: 0;
+}
 .intro{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .intro__content{
     padding-right: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .intro__title{
+    display: block;
     font-size: 55px;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    padding-bottom: 60px;
     line-height: 65px;
+    letter-spacing: -1px;
 }
 .intro__text{
+    display: block;
     margin-bottom: 45px;
     padding-right: 130px;
+
+}
+
+.intro__illustration{
+    margin-left: 30px;
 }
 /*-------------------------intro--------------------------*/
 /*-------------------------about--------------------------*/
 .about{
-    margin-bottom: 150px;
+    margin-bottom: 167px;
 }
 .about__flex{
     align-items: flex-start;
@@ -146,26 +175,193 @@ p{
     margin-left: 120px;
     
 }
+
+
 .item-number{
     position: absolute;
-    font-size: 12px;
-    padding: 10px 20px;
-    /* width: 67px;
-    height: 40px; */
+    font-size: 14px;
+    padding: 10px 25px;
     border-radius: 20px;
     background-color: var(--bright-red);
     color: var(--very-pale--red);
     text-align: center;
-    top:0;
-    left:-83px
+    top: 0;
+    left: -101px;
 }
 .about__title{
     margin-bottom: 45px;
+    /* line-height: 1.5; */
 }
 .item__title{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.about__title-block{
+    flex: 50%;
+}
+.aboute__items{
+    flex: 50%;
+}
+/*-------------------------about--------------------------*/
+/*-------------------------testimonials--------------------------*/
+.testimonials{
+    margin-bottom: 180px;
+    
+}
+
+
+.big-container{
+    max-width: 1440px; /*максимальный размер 1170пх*/
+    width: 100%; /*ширина блока*/
+    padding: 0 20;
+    margin: 0 auto; /*выровниваем по центру*/
+}
+.testimonials__flex{
+    margin-bottom: 60px;
+}
+.testimonials__item{
+    padding: 0 20px;
+    margin: 0 20px;
+}
+.testimonials__title{
+    text-align: center;
+    margin-bottom: 75px;
+}
+/* .testimonials__item{
+    flex: 50%;
+} */
+
+.testimonials__item{
+    text-align: center;
+    flex: 33.33333;
+}
+.testimonial__img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.testimonials__name{
     margin-bottom: 30px;
 }
 
-/*-------------------------about--------------------------*/
+.testimonials__form{
+    text-align: center;
+}
+/*-------------------------testimonials--------------------------*/
+/*-------------------------simplify--------------------------*/
+.simplify{
+    background: var(--very-pale--red) url("../img/bg-simplify-section-desktop.svg") bottom;
+    background-color: var(--bright-red);
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .simplify__flex{
+    padding: auto 0;
+    
+} */
+.simplify__title{
+    width: 500px;
+    color: var(--very-pale--red);
+    
+}
+
+.simplify__btn{
+    background-color: var(--very-pale--red);
+    color: var(--bright-red);
+}
+/*-------------------------simplify--------------------------*/
+/*-------------------------footer--------------------------*/
+.footer{
+    padding: 60px 0;
+    background-color: var(--very-dark-blue);
+}
+.footer__nav{
+    align-items: flex-start;
+}
+.footer__menu li{
+    list-style-type: none;
+    margin-bottom: 20px;     
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    color: var(--vary-light-gray);
+    cursor: pointer;
+}
+/* .footer__menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+} */
+
+.footer__menu:first-child{
+    margin-right: 100px;
+}
+.footer__menu:last-child{
+    margin-left: 100px;
+}
+.footer__menu li:hover{
+    color: var(--bright-red);
+}
+
+.footer-logo{
+    margin-bottom: 80px;
+}
+
+.footer__social ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.footer__social ul li{
+    list-style-type: none;
+    margin: 0 10px; 
+    cursor: pointer; 
+}
+.fab{
+    color: #ffffff;
+    font-size: 20px;
+}    
+.fab:hover{
+    color: var(--bright-red);
+}
+
+.footer__btn{
+    padding: 15px 24px;
+    margin-bottom: 10px;       
+}
+.form__input{
+    /* padding: 15px 80px; */
+    width: 220px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid var(--bright-red); 
+    margin-right: 10px;
+    text-align: left;
+    outline: none;
+    padding-left: 10px;
+}
+.form__input::placeholder{
+    color: var(--bright-red);
+    font-style: italic;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+.footer__btn-labal{
+    color: var(--bright-red);
+    font-style: italic;
+    font-size: 10px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.copyright{
+    text-align: right;
+    color:#242D52";
+
+}
+/*-------------------------footer--------------------------*/
