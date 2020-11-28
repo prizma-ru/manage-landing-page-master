@@ -215,7 +215,7 @@ p{
 .big-container{
     max-width: 1440px; /*максимальный размер 1170пх*/
     width: 100%; /*ширина блока*/
-    padding: 0 20;
+    padding: 0 20px;
     margin: 0 auto; /*выровниваем по центру*/
 }
 .testimonials__flex{
@@ -361,7 +361,7 @@ p{
 }
 .copyright{
     text-align: right;
-    color:#242D52";
+    color:#242D52;
 
 }
 /*-------------------------footer--------------------------*/
